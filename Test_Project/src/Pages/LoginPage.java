@@ -24,24 +24,24 @@ public class LoginPage {
     }
 
     public void ClickCustomer(){
-        eCustomerLogin = (new WebDriverWait(driver,Duration.ofSeconds(2)))
+        eCustomerLogin = (new WebDriverWait(driver,Duration.ofSeconds(4)))
         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(customerLogin)));
         eCustomerLogin.click();
     }
     public void SelectCustomer()
     {
-        ecustomerDropdown = (new WebDriverWait(driver,Duration.ofSeconds(2)))
+        ecustomerDropdown = (new WebDriverWait(driver,Duration.ofSeconds(4)))
         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(customerDropdown)));
         ecustomerDropdown.click();
 
-        eSelectCustomer = (new WebDriverWait(driver,Duration.ofSeconds(2)))
+        eSelectCustomer = (new WebDriverWait(driver,Duration.ofSeconds(4)))
         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(selectCustomer)));
         eSelectCustomer.click();
     }
 
     public void Login()
     {
-        elogin = (new WebDriverWait(driver,Duration.ofSeconds(2)))
+        elogin = (new WebDriverWait(driver,Duration.ofSeconds(4)))
         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(login)));
         elogin.click();
     }
